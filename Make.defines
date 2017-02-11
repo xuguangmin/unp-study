@@ -1,0 +1,7 @@
+CC = gcc
+CFLAGS = -I../lib -g -o2 -Wall 
+RANLIB = ranlib
+
+LIBUNP_NAME = ../libunp.a
+
+LIB_OBJS=$(patsubst %.c, %.o, $(wildcard *.c))
