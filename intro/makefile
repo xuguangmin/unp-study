@@ -11,4 +11,4 @@ all:
 	done
 
 clean:
-	@rm -f  $(TARGETS)
+	@rm -f  $(TARGETS) *.o
