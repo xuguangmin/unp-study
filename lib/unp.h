@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <netinet/ip.h>
 #include <sys/types.h>          /* See NOTES */
- #include <arpa/inet.h>
+#include <arpa/inet.h>
 
 
 #define HAVE_VSNPRINTF
@@ -20,4 +20,10 @@
 
 void err_quit(const char *, ...);
 void err_sys(const char *, ...);
+int Socket(int, int, int);
+void Listen(int, int backlog);
+int Accept(int, SA*, socklen_t *);
+void Bind(int, const SA *, socklen_t);
+void Write(int, void *, size_t);
+void Close(int);
 
