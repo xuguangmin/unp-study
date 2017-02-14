@@ -12,7 +12,8 @@
 
 #define HAVE_VSNPRINTF
 
-#define MAXLINE	4096
+#define MAXLINE	4096	
+#define LISTENQ	1024	//监听队列最大值
 
 #define SA	struct sockaddr
 
